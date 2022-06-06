@@ -6,7 +6,7 @@
 <img align="center" alt="MySQL" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"/>
 <img align="center" alt="Redis" src="https://img.shields.io/badge/redis-CC0000.svg?&style=for-the-badge&logo=redis&logoColor=white"/>
 </div>
-
+<br />
 
 Development environment with php 8.1-fpm, Nginx, MySQL and Redis
 
