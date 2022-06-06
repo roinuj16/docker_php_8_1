@@ -1,0 +1,7 @@
+.DS_Store
+.idea/
+
+.docker/.env
+.docker/.entrypoints
+.make/.env
+
