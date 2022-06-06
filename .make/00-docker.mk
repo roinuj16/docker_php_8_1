@@ -74,15 +74,15 @@ docker-build-image: validate-docker-variables ## Build all docker images OR a sp
 	$(DOCKER_COMPOSE) build $(DOCKER_SERVICE_NAME)
 
 .PHONY: docker-up
-docker-up: validate-docker-variables ## Create and start all docker containers. To create/start only a specific container, use DOCKER_SERVICE_NAME=<service>
+docker-up: validate-docker-variables ## Create and start all docker containers. To create/start only a specific container, use make docker-up DOCKER_SERVICE_NAME=<service>
 	@$(DOCKER_COMPOSE) up -d $(DOCKER_SERVICE_NAME)
 
 .PHONY: docker-down
-docker-down: validate-docker-variables ## Stop and remove all docker containers.
+docker-down: validate-docker-variables ## Stop and remove all docker containers. To stop only a specific container, use make docker-down DOCKER_SERVICE_NAME=<service>
 	@$(DOCKER_COMPOSE) down
 
 .PHONY: docker-config
-docker-config: validate-docker-variables ## List the configuration
+docker-config: validate-docker-variables ## List all configuration in docker-compose file.
 	@$(DOCKER_COMPOSE) config
 
 .PHONY: docker-prune

@@ -7,7 +7,7 @@ execute-in-container: ## Execute a command in a container. E.g. via "make execut
 	@$(EXECUTE_IN_ANY_CONTAINER) $(COMMAND)
 
 .PHONY: composer
-composer: ## Run composer commands. Specify the command e.g. via ARGS="install"
+composer: ## Run composer commands. Specify the command e.g. via "make composer ARGS="install"
 	@$(EXECUTE_IN_APPLICATION_CONTAINER) composer $(ARGS);
 
 .PHONY: redis-cli
