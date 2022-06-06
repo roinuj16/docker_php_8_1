@@ -7,6 +7,7 @@
 <img align="center" alt="Redis" src="https://img.shields.io/badge/redis-CC0000.svg?&style=for-the-badge&logo=redis&logoColor=white"/>
 </div>
 
+
 Development environment with php 8.1-fpm, Nginx, MySQL and Redis
 
 ## Getting Started
