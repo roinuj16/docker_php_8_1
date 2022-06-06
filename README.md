@@ -1,18 +1,46 @@
-# .docker
-Here has all docker configurations like images, docker-compose and entrypoint used for some containers like MySQL and Redis.
-Also, has a file .env-example with initial setting, fell free to update that file with your settings.
+# Docker environment with php 8.1
+<hr>
+<div style="display:inline-block">
+<img align="center" alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
+<img align="center" alt="Nginx" src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white"/>
+<img align="center" alt="MySQL" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img align="center" alt="Redis" src="https://img.shields.io/badge/redis-CC0000.svg?&style=for-the-badge&logo=redis&logoColor=white"/>
+</div>
 
-# .make
-Into the folder .make has all makefiles used to run commands inside the containers.
+Development environment with php 8.1-fpm, Nginx, MySQL and Redis
 
-#Makefile
-This file is the entrypoint of all makes configurations
+## Getting Started
 
+These instructions will get you a copy of the project up and running on your local machine for development.
 
-# remember
-Para testar o container do redis
+### Prerequisites
+
+Docker and docker-compose installed
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running
+
+Clone the project and go to project folder
+
 ```
-docker exec -it docker_redis_1 redis-cli -a 'secret_redis_password'
-
-> ping
+git@github.com:roinuj16/docker_php_8_1.git
+cd docker_php_8_1
 ```
+
+To check all available commands run the command
+
+```
+make 
+```
+
+Initialize the ./make/.env and ./docker.env files
+
+```
+make make-init
+make docker-init
+```
+
+## Authors
+
+* **Edson Junior** - [Roinuj16](https://github.com/roinuj16)
