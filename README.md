@@ -1,5 +1,5 @@
 # Docker environment with php 8.1
-<hr>
+
 <div style="display:inline-block">
 <img align="center" alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
 <img align="center" alt="Nginx" src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white"/>
